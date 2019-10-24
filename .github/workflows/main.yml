@@ -18,6 +18,10 @@ jobs:
     - name: Say hi
       run: |
         echo hi
+    - name: Secret step
+      if: secrets.mysecret != ''
+      run: |
+        echo Running secrets-only step
   windows:
     runs-on: windows-latest
     steps:
