@@ -24,6 +24,10 @@ jobs:
       run: |
         echo $MY_SECRET > file
         cat file
+    - name: pwsh
+      shell: pwsh
+      run: |
+        $PSVersionTable
   windows:
     runs-on: windows-latest
     steps:
