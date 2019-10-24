@@ -25,3 +25,10 @@ jobs:
     - name: Say hi
       run: |
         echo hi
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Say hi
+      run: |
+        echo hi
