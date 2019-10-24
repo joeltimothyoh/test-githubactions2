@@ -22,7 +22,8 @@ jobs:
       env:
         MY_SECRET: ${{ secrets.mysecret }}
       run: |
-        echo $MY_SECRET
+        echo $MY_SECRET > file
+        cat file
   windows:
     runs-on: windows-latest
     steps:
