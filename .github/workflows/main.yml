@@ -19,7 +19,7 @@ jobs:
       run: |
         echo hi
     - name: Secret step
-      if: secrets.mysecret != ''
+      if: ${{ secrets.mysecret }} != ''
       run: |
         echo Running secrets-only step
   windows:
